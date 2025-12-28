@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "export": "GITHUB_PAGES=true next build",
-    "deploy": "GITHUB_PAGES=true next build && gh-pages -d out"
+    "deploy": "GITHUB_PAGES=true next build && touch out/.nojekyll && gh-pages -d out"
   },
   "dependencies": {
     "next": "16.1.1",
